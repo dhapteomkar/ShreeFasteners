@@ -1,0 +1,119 @@
+/* General Reset */
+body, h1, ul, li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Container */
+.custom-header-container {
+  background: #ff7300; /* Orange Background */
+  width: 100%; /* Full Width */
+  padding: 0.2rem 0;  /* Rounded Corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Slight Shadow */
+  text-align: center; /* Center the content */
+}
+
+/* Navbar List Styling */
+.custom-navbar {
+  display: flex; /* Flexbox for row layout */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Align items vertically */
+  list-style: none; /* Removes bullet points */
+  padding: 0;
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+/* Navbar Items Styling */
+.custom-nav-item {
+  margin: 0 0.5rem; /* Horizontal spacing between items */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  text-align: center; /* Ensures text inside the link is centered */
+  max-width: 150px; /* Set a max width so text breaks correctly */
+}
+
+/* Navbar Links Styling */
+.custom-nav-link {
+  color: white; /* White text color */
+  text-decoration: none; /* Removes underline */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean professional font */
+  font-size: 1.2rem; /* Slightly larger text */
+  font-weight: 500; /* Semi-bold text */
+  padding: 0.5rem 1rem; /* Adds padding around links */
+  transition: all 0.3s ease-in-out; /* Smooth hover effect */
+  display: block; /* Ensures proper block-level behavior */
+  max-width: 100%; /* Ensures text fits inside the container */
+  text-align: center; /* Center text for multi-line items */
+  white-space: normal; /* Allows text to wrap */
+  word-wrap: break-word; /* Breaks long words if needed */
+}
+
+/* Hover Effect */
+.custom-nav-link:hover {
+  text-decoration: underline; /* Underline on hover */
+  color: #ffcc66; /* Lighter orange text on hover */
+}
+
+/* Animation */
+.custom-nav-item {
+  opacity: 0; /* Hidden initially for animation */
+  transform: translateY(20px); /* Starts below the view */
+  animation: fadeIn 0.5s ease forwards; /* Smooth fade-in animation */
+}
+
+/* Add staggered animation delays for each item */
+.custom-nav-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.custom-nav-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.custom-nav-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.custom-nav-item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.custom-nav-item:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.custom-nav-item:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.custom-nav-item:nth-child(7) {
+  animation-delay: 0.7s;
+}
+.custom-nav-item:nth-child(8) {
+  animation-delay: 0.8s;
+}
+.custom-nav-item:nth-child(9) {
+  animation-delay: 0.9s;
+}
+.custom-nav-item:nth-child(10) {
+  animation-delay: 1.0s;
+}
+.custom-nav-item:nth-child(11) {
+  animation-delay: 1.1s;
+}
+.custom-nav-item:nth-child(12) {
+  animation-delay: 1.2s;
+}
+/* Keyframes for Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) { 
+  .mobilenot {
+    display: none !important; 
+  }
+}

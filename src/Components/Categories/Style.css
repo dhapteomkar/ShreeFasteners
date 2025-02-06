@@ -1,0 +1,147 @@
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.btn {
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.product-image {
+  width: 100%;
+  height: 150px;
+  object-fit: contain; /* Ensures the entire image is visible without cropping */
+  border-radius: 10px;
+}
+
+.product-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.product-description {
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+  text-decoration: underline !important;
+  text-decoration-color: white !important;
+}
+
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-orange {
+  background-color: rgb(255, 128, 0) !important;
+  color: white !important;
+  border-color: rgb(255, 106, 0) !important;
+}
+
+.btn-orange:hover {
+  background-color: darkorange !important;
+  border-color: darkorange !important;
+}
+
+
+/* Default styles for products (desktop and tablet view) */
+.product-row .col-lg-3, 
+.product-row .col-md-4, 
+.product-row .col-sm-6, 
+.product-row .col-12 {
+  padding: 10px;
+  
+   /* Default padding */
+}
+.product-name a {
+  color: orange !important; /* Inherit color from parent (you can also set a specific color) */
+  text-decoration: underline; 
+  text-decoration-color: white !important;/* Remove default underline */
+}
+.newer{
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+}
+.new{
+  padding-left: 100px !important;
+  padding-right: 100px !important;
+}
+/* Apply custom orange underline when hovering over product name */
+
+
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+
+  .new{
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+  .newer{
+    padding: 15px !important;
+  }
+
+  .product-row {
+    margin: 0; /* Remove extra row margins */
+    padding: 0 5px; /* Minimal padding for left and right */
+  }
+
+  .product-col {
+    padding-left: 5px; /* Adjust padding as needed */
+    padding-right: 5px; /* Adjust padding as needed */
+    display: flex;
+    justify-content: center;
+    text-align: center; /* Center text */
+  }
+
+  .product-card {
+    height: 100%; /* Ensure cards are consistent in height */
+  }
+
+  
+
+  /* You can also set a default size for the images */
+  .product-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .product-name {
+    font-size: 1rem;
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  .product-description {
+    font-size: 0.85rem; /* Adjusted description font size */
+    text-align: center;
+    color: #666;
+    display: none; 
+     margin-bottom: 5px;
+  }
+
+  /* Ensure animation scales properly */
+  .product-col:hover .product-card {
+    transform: scale(1.05); /* Add hover effect */
+    transition: transform 0.2s ease-in-out; /* Smooth animation */
+  }
+}
